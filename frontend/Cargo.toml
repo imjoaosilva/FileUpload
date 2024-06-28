@@ -4,4 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+gloo = { version = "0.11.0", features = ["futures"] }
 leptos = { version = "0.6.12", features = ["csr", "nightly"] }
+reqwest = { version = "0.12.5", features = ["multipart", "stream"] }
+tokio-util = "0.7.11"
+wasm-bindgen-futures = "0.4.42"
+web-sys = { version = "0.3.69", features = ["FileList", "File"] }

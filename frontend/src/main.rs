@@ -1,12 +1,10 @@
 use leptos::*;
 
+use crate::app::App;
+
+mod app;
+mod services;
+
 fn main() {
     mount_to_body(|| view! { <App/> });
-}
-
-#[component]
-pub fn App() -> impl IntoView {
-    view! {
-        <h1>test1</h1>
-    }
 }
