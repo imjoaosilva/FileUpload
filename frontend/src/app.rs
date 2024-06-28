@@ -45,14 +45,14 @@ pub fn app() -> impl IntoView {
                 if loading.get() {
                     view! {
                         <>
-                            <p>"Carregando..."</p>
+                            <p>"Loading..."</p>
                         </>
                     }
                 } else {
                     view! {
                         <>
                             <form on:submit=on_submit>
-                                <label for="picture">Escolha uma imagem:</label>
+                                <label for="picture">Select a picture:</label>
                                 <input type="file" id="picture" name="picture" accept="image/png, image/jpeg" on:input=on_input/>
                                 <button type="submit">Upload</button>
                             </form>
@@ -66,7 +66,7 @@ pub fn app() -> impl IntoView {
                             } else {
                                 view! {
                                     <>
-                                        <p>"Nenhuma imagem carregada"</p>
+                                        <p>"No image uploaded"</p>
                                     </>
                                 }
                             }}
